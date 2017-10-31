@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+Hi, Welcome <span th:if="${session.CURRENT_USER}" th:text="${session.CURRENT_USER.authorities}"></span>!
+</body>
+</html>

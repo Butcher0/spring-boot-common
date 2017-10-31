@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/user/login" method="post">
+		<div><span th:if="${param.error}" th:text="'error!'"></span></div>
+		<div>User Name: <input type="text" id="username" name="username" /></div>
+		<div>Password: <input type="password" id="password" name="password" maxlength="30"/></div>
+		<button type="submit">Login</button>
+	</form>
+</body>
+</html>
